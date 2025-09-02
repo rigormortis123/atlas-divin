@@ -1,14 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
   <head>
     <meta charset="utf-8" />
     <title>eikon parcel starter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubbler+One&family=Caesar+Dressing&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.scss" />
   </head>
   <body>
-    <h1>Hello world</h1>
+    <header>
+      <img src="./imgs/atlas-divin-logo.svg" />
+      <div class="header-left">
+        <ul>
+          <li><a href="#accueil">Mes favoris</a></li>
+          <li><a href="#daily-god">Dieux du jour</a></li>
+          <li><a href="#popular-gods">Dieux populaires</a></li>
+        </ul>
+        <button><img src="./imgs/icon/moon.svg" /></button>
+      </div>
+    </header>
 
+    <main>
+      <div class="offset-md-3 main-top-wrapper">
+        <h2>Voir les Dieux de Panthéons</h2>
+
+        <article class="daily-god-wrapper">
+          <h3>Dieux du jour</h3>
+
+          <div class="daily-god-header">
+            <h4>Bacchus</h4>
+            <p>Dieux romain du vin</p>
+          </div>
+
+          <p class="daily-god-body">
+            Egalement Dieu de l'ivresse, des débordements, de la nature et des
+            festivités. <br />
+            Bacchus est un dieu romain correspondant à Dionysos dans la
+            mythologie grecque. Les Romains utilisaient Bacchus comme un autre
+            nom de Liber Pater, un dieu latin de la fécondité.
+          </p>
+
+          <div class="daily-god-more">
+            <a href="#vous-en-savez-plus-maintenant">En savoir plus</a>
+            <img src="./imgs/icon/arrow-narrow-right.svg" />
+          </div>
+        </article>
+      </div>
+
+      <section class="row pantheons-wrapper">
+        <section class="col-md-3 pantheon-filters">
+          <h2>panthéons populaires</h2>
+
+          <div class="pantheons-filter-wrapper">
+            <input type="radio" name="type" id="greece" value="greece" />
+            <label>
+              Panthéon grec
+              <img src="./imgs/icon/arrow-narrow-right.svg" />
+            </label>
+          </div>
+
+          <div class="pantheons-filter-wrapper">
+            <input type="radio" name="type" id="egypt" value="egypt" />
+            <label>
+              Panthéon égyptien
+              <img src="./imgs/icon/arrow-narrow-right.svg" />
+            </label>
+          </div>
+
+          <div class="pantheons-filter-wrapper">
+            <input type="radio" name="type" id="nordic" value="nordic" />
+            <label>
+              Panthéon nordique
+              <img src="./imgs/icon/arrow-narrow-right.svg" />
+            </label>
+          </div>
+
+          <div class="pantheons-filter-wrapper">
+            <input type="radio" name="type" id="roman" value="roman" />
+            <label>
+              Panthéon romain
+              <img src="./imgs/icon/arrow-narrow-right.svg" />
+            </label>
+          </div>
+        </section>
+
+        <section class="col-md-9 pantheons-card-wrapper">
+          <a href="#athena">
+            <article class="col-md-3 pantheons-card" data-type="greece">
+              <img src="./imgs/athena.png" alt="Statue de Athéna" />
+              <h2>Athéna</h2>
+              <h3>Panthéon Grec</h3>
+              <p>Déesse de la guerre</p>
+            </article>
+          </a>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top-wrapper">
+        <ul>
+          <li><a href="#accueil">Mes favoris</a></li>
+          <li><a href="#daily-god">Dieux du jour</a></li>
+          <li><a href="#popular-gods">Dieux populaires</a></li>
+          <li><a href="#TOS">Politique de confitdentialité</a></li>
+        </ul>
+
+        <div class="footer-top-socials">
+          <a href="#youtube"><img src="./imgs/icon/youtube.svg" /></a>
+          <a href="#facebook"><img src="./imgs/icon/facebook.svg" /></a>
+          <a href="#instagram"><img src="./imgs/icon/instagram.svg" /></a>
+        </div>
+      </div>
+
+      <hr />
+
+      <p>Atlas Divin @ 2025. Tous droits réservés</p>
+    </footer>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>

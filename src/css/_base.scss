@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+video {
+  display: block;
+}
+
+html {
+  --color-bg: hsla(0, 0%, 100%, 1);
+  --color-text-main: hsla(0, 1%, 32%, 1);
+  --color-text-secondary: hsla(0, 0%, 0%, 1);
+  --color-bg-components: hsla(214, 6%, 75%, 1);
+  --color-blue: hsla(206, 94%, 56%, 1);
+  --color-yellow: hsla(39, 94%, 56%, 1);
+  --color-green: hsla(154, 79%, 33%, 1);
+  --color-red: hsla(0, 94%, 56%, 1);
+}
+
+html[data-theme="dark"] {
+  --color-bg: hsla(0, 1%, 32%, 1);
+  --color-text-main: hsla(0, 9%, 97%, 1);
+  --color-text-secondary: hsla(0, 0%, 100%, 1);
+  --color-bg-components: hsla(214, 2%, 42%, 1);
+  --color-blue: hsla(206, 100%, 82%, 1);
+  --color-yellow: hsla(59, 92%, 61%, 1);
+  --color-green: hsla(154, 68%, 68%, 1);
+  --color-red: hsla(0, 86%, 81%, 1);
+}
+
+div,
+article,
+header,
+footer {
+  border: 1px solid black;
+  margin: 10px;
+}

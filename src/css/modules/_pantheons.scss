@@ -1,0 +1,21 @@
+.pantheons-card img {
+  width: 100%;
+  height: 216px;
+  object-fit: cover;
+}
+
+.pantheons input[type="radio"] {
+  display: none; /* Cache les vrais boutons radio */
+}
+
+.pantheons input[type="radio"]:checked + label {
+  background: #4a90e2;
+  color: white;
+}
+
+.pantheons label {
+  cursor: pointer; /* Montre que c'est cliquable */
+  padding: 12px 24px;
+  background: white;
+  border-radius: 25px;
+}
