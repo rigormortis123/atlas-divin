@@ -15,7 +15,7 @@
   <body>
     <header>
       <img src="./imgs/atlas-divin-logo.svg" />
-      <div class="header-left">
+      <div class="header-menu">
         <ul>
           <li><a href="#accueil">Mes favoris</a></li>
           <li><a href="#daily-god">Dieux du jour</a></li>
@@ -59,7 +59,7 @@
           <div class="pantheons-filter-wrapper">
             <input type="radio" name="type" id="greece" value="greece" />
             <label>
-              Panthéon grec
+              <p>Panthéon grec</p>
               <img src="./imgs/icon/arrow-narrow-right.svg" />
             </label>
           </div>
@@ -67,15 +67,15 @@
           <div class="pantheons-filter-wrapper">
             <input type="radio" name="type" id="egypt" value="egypt" />
             <label>
-              Panthéon égyptien
+              <p>Panthéon égyptien</p>
               <img src="./imgs/icon/arrow-narrow-right.svg" />
             </label>
           </div>
 
           <div class="pantheons-filter-wrapper">
             <input type="radio" name="type" id="nordic" value="nordic" />
-            <label>
-              Panthéon nordique
+            <label
+              ><p>Panthéon nordique</p>
               <img src="./imgs/icon/arrow-narrow-right.svg" />
             </label>
           </div>
@@ -83,9 +83,9 @@
           <div class="pantheons-filter-wrapper">
             <input type="radio" name="type" id="roman" value="roman" />
             <label>
-              Panthéon romain
-              <img src="./imgs/icon/arrow-narrow-right.svg" />
-            </label>
+              <p>Panthéon romain</p>
+              <img src="./imgs/icon/arrow-narrow-right.svg"
+            /></label>
           </div>
         </section>
 
@@ -104,7 +104,7 @@
 
     <footer>
       <div class="footer-top-wrapper">
-        <ul>
+        <ul class="footer-top-links">
           <li><a href="#accueil">Mes favoris</a></li>
           <li><a href="#daily-god">Dieux du jour</a></li>
           <li><a href="#popular-gods">Dieux populaires</a></li>
@@ -120,7 +120,7 @@
 
       <hr />
 
-      <p>Atlas Divin @ 2025. Tous droits réservés</p>
+      <p class="footer-bottom">Atlas Divin @ 2025. Tous droits réservés</p>
     </footer>
     <script src="js/main.js" type="module"></script>
   </body>
