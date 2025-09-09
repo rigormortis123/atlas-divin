@@ -66,11 +66,27 @@
 .pantheons-filter label {
   cursor: pointer; /* Montre que c'est cliquable */
   padding: 12px 8px;
-  background: white;
   border-radius: 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   color: var(--color-bg);
+  background: red;
+}
+
+.pantheons-filter input[value="greece"] {
+  background: var(--color-blue);
+}
+
+.pantheons-filter input[value="egypt"] {
+  background: var(--color-yellow);
+}
+
+.pantheons-filter input[value="nordic"] {
+  background: var(--color-green);
+}
+
+.pantheons-filter input[value="roman"] {
+  background: var(--color-red);
 }

@@ -1,14 +1,21 @@
-.daily-god-wrapper h3 {
-  font-family: "Caesar Dressing", serif;
-}
-
-.main-top-wrapper h2 {
-  font-family: "Caesar Dressing", serif;
-}
-
-p {
+body {
   font-family: "Bubbler One", sans-serif;
 }
-.pantheon-filter-wrapper p {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+.main-top-wrapper h1,
+.pantheons-filter,
+.pantheons-card h2,
+.daily-god-wrapper h2,
+.daily-god-wrapper h3,
+.daily-god-wrapper h4 {
   font-family: "Caesar Dressing", serif;
 }
