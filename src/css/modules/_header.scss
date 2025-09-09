@@ -13,13 +13,14 @@
   gap: 32px;
 }
 
-header a {
-  text-decoration: none;
-}
-
 header {
+  position: sticky;
   background: var(--color-bg-components);
   color: var(--color-text-secondary);
+}
+
+header a {
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {

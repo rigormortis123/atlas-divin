@@ -19,6 +19,7 @@ body {
 
 main {
   color: var(--color-text-main);
+  padding: 20px 12px;
 }
 
 html {
@@ -58,3 +59,9 @@ html[data-theme="dark"] #dark-mode-btn {
 //   border: 1px solid black;
 //   margin: 10px;
 // }
+
+@media (min-width: 768px) {
+  main {
+    padding: 40px 80px;
+  }
+}
