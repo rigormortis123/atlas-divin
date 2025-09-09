@@ -13,6 +13,14 @@ video {
   display: block;
 }
 
+body {
+  background: var(--color-bg);
+}
+
+main {
+  color: var(--color-text-main);
+}
+
 html {
   --color-bg: hsla(0, 0%, 100%, 1);
   --color-text-main: hsla(0, 1%, 32%, 1);
@@ -35,10 +43,18 @@ html[data-theme="dark"] {
   --color-red: hsla(0, 86%, 81%, 1);
 }
 
-div,
-article,
-header,
-footer {
-  border: 1px solid black;
-  margin: 10px;
+html[data-theme="light"] #light-mode-btn {
+  display: none;
 }
+
+html[data-theme="dark"] #dark-mode-btn {
+  display: none;
+}
+
+// div,
+// article,
+// header,
+// footer {
+//   border: 1px solid black;
+//   margin: 10px;
+// }

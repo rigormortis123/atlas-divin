@@ -1,0 +1,47 @@
+.header-menu,
+.header-menu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-menu ul {
+  list-style-type: none;
+  gap: 16px;
+}
+
+.header-menu {
+  gap: 32px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  background: var(--color-bg-components);
+  color: var(--color-text-secondary);
+}
+
+@media (min-width: 768px) {
+  .header-menu,
+  .header-menu ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header-menu ul {
+    gap: 16px;
+  }
+
+  .header-menu {
+    gap: 32px;
+    align-items: center;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 80px;
+  }
+}

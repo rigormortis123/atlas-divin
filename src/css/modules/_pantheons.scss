@@ -4,18 +4,32 @@
   object-fit: cover;
 }
 
-.pantheons input[type="radio"] {
+.pantheons-card a {
+  text-decoration: none;
+}
+
+.pantheons-card {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.pantheons-filter-wrapper input[type="radio"] {
   display: none; /* Cache les vrais boutons radio */
 }
 
-.pantheons input[type="radio"]:checked + label {
-  background: #4a90e2;
+.pantheons-filter-wrapper input[type="radio"]:checked + label {
+  background: var(--color-blue);
   color: white;
 }
 
-.pantheons label {
+.pantheons-filter-wrapper label {
   cursor: pointer; /* Montre que c'est cliquable */
-  padding: 12px 24px;
+  padding: 12px 8px;
   background: white;
-  border-radius: 25px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-bg);
 }
