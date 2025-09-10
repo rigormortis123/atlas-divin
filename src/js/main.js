@@ -23,7 +23,6 @@ const filters = document.querySelectorAll("input[name='type']");
 filters.forEach((filter) => {
   filter.addEventListener("click", function () {
     const value = filter.value; // Récupère la valeur du filtre cliqué
-
     cards.forEach((card) => {
       const type = card.getAttribute("data-type"); // Récupère la catégorie de la carte
 
