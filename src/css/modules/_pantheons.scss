@@ -8,7 +8,8 @@
 .pantheons-card[data-type="greece"] {
   border-color: var(--color-blue);
 
-  h2 {
+  h2,
+  svg {
     color: var(--color-blue);
   }
 }
@@ -16,7 +17,8 @@
 .pantheons-card[data-type="egypt"] {
   border-color: var(--color-yellow);
 
-  h2 {
+  h2,
+  svg {
     color: var(--color-yellow);
   }
 }
@@ -24,7 +26,8 @@
 .pantheons-card[data-type="nordic"] {
   border-color: var(--color-green);
 
-  h2 {
+  h2,
+  svg {
     color: var(--color-green);
   }
 }
@@ -32,7 +35,8 @@
 .pantheons-card[data-type="roman"] {
   border-color: var(--color-red);
 
-  h2 {
+  h2,
+  svg {
     color: var(--color-red);
   }
 }
@@ -111,6 +115,10 @@
   color: var(--color-bg);
 }
 
+.pantheons-filter input + label svg {
+  color: var(--color-bg);
+}
+
 .pantheons-filter input[value="greece"] + label {
   background: var(--color-blue);
   border-color: var(--color-blue);
@@ -119,6 +127,9 @@
 .pantheons-filter input[value="greece"]:checked + label {
   background: var(--color-bg);
   color: var(--color-blue);
+  svg {
+    color: var(--color-blue);
+  }
 }
 
 .pantheons-filter input[value="egypt"] + label {
@@ -128,6 +139,9 @@
 .pantheons-filter input[value="egypt"]:checked + label {
   background: var(--color-bg);
   color: var(--color-yellow);
+  svg {
+    color: var(--color-yellow);
+  }
 }
 
 .pantheons-filter input[value="nordic"] + label {
@@ -137,6 +151,9 @@
 .pantheons-filter input[value="nordic"]:checked + label {
   background: var(--color-bg);
   color: var(--color-green);
+  svg {
+    color: var(--color-green);
+  }
 }
 
 .pantheons-filter input[value="roman"] + label {
@@ -146,4 +163,7 @@
 .pantheons-filter input[value="roman"]:checked + label {
   background: var(--color-bg);
   color: var(--color-red);
+  svg {
+    color: var(--color-red);
+  }
 }
