@@ -16,3 +16,9 @@
   height: 40px;
   border-radius: 4px;
 }
+
+@media (min-width: 768px) {
+  .burger-menu-btn {
+    display: none;
+  }
+}

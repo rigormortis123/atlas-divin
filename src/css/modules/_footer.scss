@@ -57,5 +57,9 @@ footer {
     display: flex;
     gap: 16px;
     align-items: center;
+
+    li + li {
+      margin-top: 0px;
+    }
   }
 }

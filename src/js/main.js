@@ -1,3 +1,5 @@
+// DARK/LIGHT MODE
+
 // On commence par créer deux variables JavaScript,
 // pour sélectionner chacune un des deux boutons (light et dark)
 const toggleDarkModeBtn = document.querySelector("#dark-mode-btn");
@@ -16,6 +18,8 @@ toggleLightModeBtn.addEventListener("click", function () {
   // l'attribut data-theme de la balise <html> prenne pour valeur "light"
   document.querySelector("html").setAttribute("data-theme", "light");
 });
+
+// FILTERS
 
 const cards = document.querySelectorAll(".pantheons-card");
 const filters = document.querySelectorAll("input[name='type']");
@@ -40,3 +44,14 @@ filters.forEach((filter) => {
     });
   });
 });
+
+// BURGER MENU
+
+var burger = document.querySelector(".burger-menu-btn");
+var menu = document.querySelector(".header-burger-menu-wrapper");
+
+function toggleMenu() {
+  menu.classList.toggle("is-active");
+}
+
+burger.addEventListener("click", toggleMenu);

@@ -178,6 +178,9 @@
 }
 
 @media (min-width: 768px) {
+  .pantheons-filter-wrapper {
+    position: sticky;
+  }
   .pantheons-card-wrapper {
     margin-top: 0;
   }
