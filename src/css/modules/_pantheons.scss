@@ -131,56 +131,66 @@
   color: var(--color-bg);
 }
 
-.pantheons-filter input + label svg {
-  color: var(--color-bg);
-}
+.pantheons-filter {
+  input + label svg {
+    color: var(--color-bg);
+  }
 
-.pantheons-filter input[value="greece"] + label {
-  background: var(--color-blue);
-  border-color: var(--color-blue);
-}
+  input[value="greece"] + label {
+    background: var(--color-blue);
+    border-color: var(--color-blue);
+  }
 
-.pantheons-filter input[value="greece"]:checked + label {
-  background: var(--color-bg);
-  color: var(--color-blue);
-  svg {
+  input[value="greece"]:checked + label {
+    background: var(--color-bg);
     color: var(--color-blue);
+    svg {
+      color: var(--color-blue);
+    }
   }
-}
 
-.pantheons-filter input[value="egypt"] + label {
-  background: var(--color-yellow);
-  border-color: var(--color-yellow);
-}
-.pantheons-filter input[value="egypt"]:checked + label {
-  background: var(--color-bg);
-  color: var(--color-yellow);
-  svg {
+  input[value="egypt"] + label {
+    background: var(--color-yellow);
+    border-color: var(--color-yellow);
+  }
+
+  input[value="egypt"] + label {
+    background: var(--color-yellow);
+    border-color: var(--color-yellow);
+  }
+
+  input[value="egypt"]:checked + label {
+    background: var(--color-bg);
     color: var(--color-yellow);
+    svg {
+      color: var(--color-yellow);
+    }
   }
-}
 
-.pantheons-filter input[value="nordic"] + label {
-  background: var(--color-green);
-  border-color: var(--color-green);
-}
-.pantheons-filter input[value="nordic"]:checked + label {
-  background: var(--color-bg);
-  color: var(--color-green);
-  svg {
+  input[value="nordic"] + label {
+    background: var(--color-green);
+    border-color: var(--color-green);
+  }
+
+  input[value="nordic"]:checked + label {
+    background: var(--color-bg);
     color: var(--color-green);
+    svg {
+      color: var(--color-green);
+    }
   }
-}
 
-.pantheons-filter input[value="roman"] + label {
-  background: var(--color-red);
-  border-color: var(--color-red);
-}
-.pantheons-filter input[value="roman"]:checked + label {
-  background: var(--color-bg);
-  color: var(--color-red);
-  svg {
+  input[value="roman"] + label {
+    background: var(--color-red);
+    border-color: var(--color-red);
+  }
+
+  input[value="roman"]:checked + label {
+    background: var(--color-bg);
     color: var(--color-red);
+    svg {
+      color: var(--color-red);
+    }
   }
 }
 
