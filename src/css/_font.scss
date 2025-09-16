@@ -11,11 +11,43 @@ h6 {
   font-weight: 400;
 }
 
-.main-top-wrapper h1,
+.top-wrapper h1,
 .pantheons-filter,
 .pantheons-card h2,
 .daily-god-wrapper h2,
 .daily-god-wrapper h3,
 .daily-god-wrapper h4 {
   font-family: "Caesar Dressing", serif;
+}
+
+.daily-god-wrapper {
+  h2 {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+}
+
+.top-wrapper {
+  h1 {
+    padding-bottom: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+footer {
+  .footer-top-wrapper {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-wrapper {
+    h1 {
+      margin-bottom: 40px;
+    }
+  }
 }

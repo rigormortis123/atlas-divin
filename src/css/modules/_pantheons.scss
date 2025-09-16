@@ -1,3 +1,7 @@
+.pantheons-card-wrapper {
+  margin-top: 20px;
+}
+
 .pantheons-card {
   overflow: hidden;
   border-radius: 8px;
@@ -165,5 +169,11 @@
   color: var(--color-red);
   svg {
     color: var(--color-red);
+  }
+}
+
+@media (min-width: 768px) {
+  .pantheons-card-wrapper {
+    margin-top: 0;
   }
 }
