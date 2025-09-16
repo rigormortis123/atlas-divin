@@ -1,5 +1,8 @@
 .pantheons-card-wrapper {
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .pantheons-card {
@@ -98,12 +101,16 @@
   right: 12px;
 }
 
+.pantheons-filter-wrapper {
+  position: sticky;
+  top: 20px;
+}
+
 .pantheons-filter-wrapper h2 {
   margin-bottom: 16px;
 }
 
 .pantheons-filter-button-wrapper {
-  position: sticky;
   display: flex;
   flex-direction: column;
   gap: 20px;
