@@ -1,113 +1,10 @@
-.pantheons-card-wrapper {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.pantheons-card {
-  overflow: hidden;
-  border-radius: 8px;
-  border-width: 2px;
-  border-style: solid;
-}
-
-.pantheons-card[data-type="greece"] {
-  border-color: var(--color-blue);
-
-  h2,
-  svg {
-    color: var(--color-blue);
-  }
-}
-
-.pantheons-card[data-type="egypt"] {
-  border-color: var(--color-yellow);
-
-  h2,
-  svg {
-    color: var(--color-yellow);
-  }
-}
-
-.pantheons-card[data-type="nordic"] {
-  border-color: var(--color-green);
-
-  h2,
-  svg {
-    color: var(--color-green);
-  }
-}
-
-.pantheons-card[data-type="roman"] {
-  border-color: var(--color-red);
-
-  h2,
-  svg {
-    color: var(--color-red);
-  }
-}
-
-.pantheons-card.hide {
-  display: none;
-}
-
-.pantheons-card {
-  a {
-    text-decoration: none;
-  }
-}
-
-.pantheons-card-img {
-  width: 100%;
-  height: 216px;
-  object-fit: cover;
-}
-
-.pantheons-card-top {
-  position: relative;
-
-  h2 {
-    position: absolute;
-  }
-}
-
-.pantheons-card-text {
-  padding: 12px;
-}
-
-.pantheons-card-text-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 12px;
-
-  .pantheons-card-text-top img {
-    width: 16px;
-  }
-}
-
-.pantheons-card-title {
-  position: absolute;
-  padding: 8px 12px;
-  bottom: 0;
-  display: inline;
-  background: var(--color-bg);
-}
-
-.pantheons-card-bookmark {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-}
-
 .pantheons-filter-wrapper {
   position: sticky;
   top: 20px;
-}
 
-.pantheons-filter-wrapper h2 {
-  margin-bottom: 16px;
+  h2 {
+    margin-bottom: 16px;
+  }
 }
 
 .pantheons-filter-button-wrapper {
@@ -116,23 +13,24 @@
   gap: 20px;
 }
 
-.pantheons-filter input[type="radio"] {
-  display: none; /* Cache les vrais boutons radio */
-}
-
-.pantheons-filter label {
-  cursor: pointer; /* Montre que c'est cliquable */
-  padding: 12px 8px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  color: var(--color-bg);
-}
-
 .pantheons-filter {
+  input[type="radio"] {
+    display: block; /* Cache les vrais boutons radio */
+  }
+
   input + label svg {
+    color: var(--color-bg);
+  }
+
+  label {
+    display: block;
+    cursor: pointer; /* Montre que c'est cliquable */
+    padding: 12px 8px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     color: var(--color-bg);
   }
 
@@ -192,6 +90,109 @@
       color: var(--color-red);
     }
   }
+}
+
+.pantheons-card-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pantheons-card {
+  overflow: hidden;
+  border-radius: 8px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.pantheons-card[data-type="greece"] {
+  border-color: var(--color-blue);
+
+  h2,
+  svg {
+    color: var(--color-blue);
+  }
+}
+
+.pantheons-card[data-type="egypt"] {
+  border-color: var(--color-yellow);
+
+  h2,
+  svg {
+    color: var(--color-yellow);
+  }
+}
+
+.pantheons-card[data-type="nordic"] {
+  border-color: var(--color-green);
+
+  h2,
+  svg {
+    color: var(--color-green);
+  }
+}
+
+.pantheons-card[data-type="roman"] {
+  border-color: var(--color-red);
+
+  h2,
+  svg {
+    color: var(--color-red);
+  }
+}
+
+.pantheons-card {
+  a {
+    text-decoration: none;
+  }
+}
+
+.pantheons-card.hide {
+  display: none;
+}
+
+.pantheons-card-img {
+  width: 100%;
+  height: 216px;
+  object-fit: cover;
+}
+
+.pantheons-card-top {
+  position: relative;
+
+  h2 {
+    position: absolute;
+  }
+}
+
+.pantheons-card-text {
+  padding: 12px;
+}
+
+.pantheons-card-text-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+
+  img {
+    width: 16px;
+  }
+}
+
+.pantheons-card-title {
+  position: absolute;
+  padding: 8px 12px;
+  bottom: 0;
+  display: inline;
+  background: var(--color-bg);
+}
+
+.pantheons-card-bookmark {
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
 
 @media (min-width: 768px) {
