@@ -15,7 +15,7 @@
 
 .pantheons-filter {
   input[type="radio"] {
-    display: block; /* Cache les vrais boutons radio */
+    display: none; /* Cache les vrais boutons radio */
   }
 
   input + label svg {
